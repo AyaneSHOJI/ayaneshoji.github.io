@@ -1,0 +1,324 @@
+/* styles moved from index.html */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  line-height: 1.5;
+  color: #222;
+  margin: 20px auto;
+  max-width: 900px;
+  width: calc(100% - 40px); /* keep horizontal padding on small screens */
+  box-sizing: border-box;
+}
+header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+h1 {
+  margin: 1rem;
+  font-size: 1.9rem;
+}
+.contact {
+  margin-top: 6px;
+  color: #444;
+}
+a {
+  color: #0a66c2;
+  text-decoration: none;
+}
+section {
+  margin-bottom: 18px;
+}
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  border-left: 3px solid #eee;
+  padding-left: 10px;
+  color: #333;
+}
+.job {
+  margin-bottom: 10px;
+}
+.job h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 6px;
+}
+ul {
+  margin: 6px 0 12px 20px;
+}
+.skills,
+.education {
+  display: block;
+}
+
+:root {
+  --bg: #f6fbff;
+  --card-bg: #ffffff;
+  --text: #0f1724;
+  --muted: #556070;
+  --primary: #0b6fb8; /* accessible blue */
+  --primary-600: #055a92;
+  --accent: #e6f4ff;
+  --shadow: 0 6px 18px rgba(11, 111, 184, 0.08);
+  --focus-ring: rgba(11, 111, 184, 0.18);
+  --radius: 10px;
+}
+
+/* page background and centered column */
+html,
+body {
+  height: 100%;
+  background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+  color: var(--text);
+  margin: 0;
+  padding: 20px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 40px);
+}
+
+/* header */
+header {
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 90, 150, 0.04),
+    rgba(230, 244, 255, 0.2)
+  );
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 18px;
+  border: 1px solid rgba(11, 111, 184, 0.06);
+}
+h1 {
+  margin: 0 0 6px 0;
+  font-size: 1.9rem;
+  color: var(--primary-600);
+  letter-spacing: 0.2px;
+}
+.contact {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+header p {
+  margin-top: 8px;
+  color: #162030;
+}
+
+/* main sections styled as soft cards */
+section {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 14px;
+  box-shadow: 0 3px 10px rgba(3, 34, 63, 0.04);
+  border-left: 4px solid rgba(11, 111, 184, 0.06);
+}
+
+/* section headings */
+h2 {
+  font-size: 1.15rem;
+  margin: 0 0 12px 0;
+  color: var(--primary-600);
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgba(10, 110, 180, 0.06), transparent 60%);
+}
+
+/* job cards inside section */
+.job {
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.job:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(11, 111, 184, 0.06);
+}
+.job h3 {
+  margin: 0 0 6px 0;
+  font-size: 1rem;
+}
+.meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+/* lists and bullets */
+ul {
+  margin: 6px 0 12px 20px;
+  line-height: 1.45;
+}
+li {
+  margin-bottom: 6px;
+}
+
+/* highlight a few keywords sparingly */
+strong {
+  color: var(--primary-600);
+  font-weight: 600;
+}
+
+/* skills and chips */
+.skills p {
+  margin: 6px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.skills p strong {
+  margin-right: 6px;
+  color: var(--primary);
+}
+.skill-chip {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--primary-600);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(11, 111, 184, 0.06);
+}
+
+/* footer */
+footer {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+/* links and buttons */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: var(--primary-600);
+}
+
+/* accessible focus */
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--focus-ring);
+  border-radius: 6px;
+}
+
+/* responsive tweaks */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  section {
+    padding: 14px;
+  }
+  .skills p {
+    gap: 6px;
+  }
+  .job {
+    padding: 10px;
+  }
+}
+
+/* reduced motion & prefers-contrast */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+@media (prefers-contrast: more) {
+  :root {
+    --primary: #003a66;
+    --primary-600: #002b4d;
+  }
+  section {
+    border-left-color: rgba(0, 58, 102, 0.12);
+  }
+}
+
+/* helper class: small callout */
+.callout {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 110, 180, 0.04),
+    rgba(230, 244, 255, 0.04)
+  );
+  border: 1px solid rgba(11, 111, 184, 0.06);
+  color: var(--text);
+  margin: 10px 0;
+}
+
+/* extra-tight mobile tweaks */
+@media (max-width: 420px) {
+  html,
+  body {
+    padding: 10px;
+  }
+  body {
+    width: calc(100% - 20px);
+    max-width: 100%;
+  }
+
+  header {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+  }
+
+  section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+
+  .contact {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+
+  ul {
+    margin: 6px 0 10px 16px;
+  }
+
+  .job {
+    padding: 8px;
+  }
+
+  .skills p {
+    gap: 4px;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    margin-top: 8px;
+  }
+}
