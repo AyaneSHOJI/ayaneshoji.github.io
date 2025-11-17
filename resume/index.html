@@ -7,38 +7,56 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Ayane SHOJI</h1>
-      <div class="contact">
-        Lille, France •
-        <a href="mailto:shojiayane@gmail.com">shojiayane@gmail.com</a><br />
-        <a
-          href="https://www.linkedin.com/in/ayane-shoji/"
-          target="_blank"
-          rel="noopener"
-          >LinkedIn</a
-        >
-        •
-        <a href="https://github.com/AyaneSHOJI" target="_blank" rel="noopener"
-          >GitHub</a
-        >
+    <div class="container">
+      <!-- Language Switcher -->
+      <div class="language-switcher">
+        <a href="./index.html" class="lang-link active" title="English">
+          English
+        </a>
+        <a href="./index-fr.html" class="lang-link" title="Français">
+          Français
+        </a>
       </div>
-      <p>
-        <b>C# .NET Software Engineer</b> with over 3 years of experience in the
-        finance industry.<br />
-        I focus on <b>solving problems</b> and building
-        <b>useful, reliable</b> software. What I enjoy most about this
-        profession is the constant learning and improvement.
-      </p>
-    </header>
 
-    <main>
-      <section>
+      <!-- Header -->
+      <header>
+        <h1>Ayane SHOJI</h1>
+        <div class="contact">
+          Lille, France •
+          <a href="mailto:shojiayane@gmail.com">shojiayane@gmail.com</a><br />
+          <a
+            href="https://www.linkedin.com/in/ayane-shoji/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          •
+          <a href="https://github.com/AyaneSHOJI" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </div>
+
+        <!-- Professional Summary -->
+        <p>
+          <b>C# .NET Software Engineer</b> with over 3 years of experience in
+          the finance industry.<br />
+          I focus on <b>solving problems</b> and building
+          <b>useful, reliable</b> software. What I enjoy most about this
+          profession is the constant learning and improvement.
+        </p>
+      </header>
+
+      <!-- Experience -->
+      <section class="experience">
         <h2>Experience</h2>
 
-        <article class="job">
-          <h3>Software Engineer (C# .NET) — Crédit Agricole Nord de France</h3>
-          <div class="meta">Lille, France • 11/2023 – 09/2025</div>
+        <div class="job">
+          <div class="job-header">
+            <h3>C# .NET Software Engineer — Crédit Agricole Nord de France</h3>
+            <div class="meta">
+              Lille, France • 11/2023 – 09/2025 11/2023 – 09/2025
+            </div>
+          </div>
           <ul>
             <li>
               Engineered and maintained web applications and batch programs for
@@ -68,11 +86,13 @@
               release schedules.
             </li>
           </ul>
-        </article>
+        </div>
 
-        <article class="job">
-          <h3>Software Engineer (C# .NET) — Groupe SII</h3>
-          <div class="meta">Villeneuve d’Ascq, France • 08/2022 – 11/2023</div>
+        <div class="job">
+          <div class="job-header">
+            <h3>C# .NET Software Engineer - Groupe SII</h3>
+            <p class="meta">Villeneuve d'Ascq, France • 08/2022 – 11/2023</p>
+          </div>
           <ul>
             <li>
               Contributed to consumer finance applications for Euro-Information,
@@ -97,11 +117,15 @@
               Authored test cases for new features in the internal system.
             </li>
           </ul>
-        </article>
+        </div>
 
-        <article class="job">
-          <h3>Software Engineer Intern (C# .NET) — Pixel Technology</h3>
-          <div class="meta">Villeneuve d’Ascq, France • 06/2021 – 11/2021</div>
+        <div class="job">
+          <div class="job-header">
+            <h3>C# .NET Software Engineer Intern - Pixel Technology</h3>
+            <div class="meta">
+              Villeneuve d'Ascq, France • 06/2021 – 11/2021
+            </div>
+          </div>
           <ul>
             <li>
               Built the front-end of a new web application for association
@@ -113,14 +137,16 @@
             </li>
             <li>Acquired knowledge of C#, .NET, Azure, AWS, and MongoDB.</li>
           </ul>
-        </article>
+        </div>
 
-        <article class="job">
-          <h3>
-            Executive Assistant / Administrative Assistant — Toyota Motor
-            Manufacturing France
-          </h3>
-          <div class="meta">Onnaing, France • 11/2013 – 07/2020</div>
+        <div class="job">
+          <div class="job-header">
+            <h3>
+              Executive Assistant / Administrative Assistant - Toyota Motor
+              Manufacturing France
+            </h3>
+            <div class="meta">Onnaing, France • 11/2013 – 07/2020</div>
+          </div>
           <ul>
             <li>Applied the Toyota Way (Kaizen, Problem-solving, 4S, etc.).</li>
             <li>
@@ -132,9 +158,13 @@
               visitor coordination, and finance.
             </li>
           </ul>
+        </div>
 
-          <h3>Project Manager</h3>
-          <div class="meta">01/2016 – 12/2016</div>
+        <div class="job">
+          <div class="job-header">
+            <h3>Project Manager - Toyota Motor Manufacturing France</h3>
+            <div class="meta">Onnaing, France • 01/2016 – 12/2016</div>
+          </div>
           <ul>
             <li>
               Led an internal project involving multiple departments and an
@@ -142,69 +172,76 @@
             </li>
             <li>Collaborated with partners to identify and solve issues.</li>
           </ul>
-        </article>
+        </div>
       </section>
 
-      <section>
+      <!-- Skills -->
+      <section class="skills">
         <h2>Skills</h2>
-        <div class="skills">
+        <div class="skill-category">
+          <h4>Programming Languages</h4>
+          <p>C#, SQL, Python (learning), JavaScript, HTML/CSS</p>
+        </div>
+        <div class="skill-category">
+          <h4>Databases</h4>
+          <p>SQL Server, MongoDB, PostgreSQL (learning)</p>
+        </div>
+        <div class="skill-category">
+          <h4>Tools</h4>
           <p>
-            <strong>Programming Languages:</strong> C#, SQL, Python (learning),
-            JavaScript, HTML/CSS
+            Visual Studio, Git, xUnit, EF Core, Stored Procedures, GitLab CI/CD,
+            SonarQube, CQRS, UI Components (Telerik, Syncfusion), Kubernetes
+            (learning), Docker (learning)
           </p>
+        </div>
+        <div class="skill-category">
+          <h4>Languages</h4>
           <p>
-            <strong>Databases:</strong> SQL Server, MongoDB, PostgreSQL
-            (learning)
+            Japanese (native), English (professional - TOEIC855), French
+            (bilingual - DALF C2)
           </p>
-          <p>
-            <strong>Tools:</strong> Visual Studio, Git, xUnit, EF Core, Stored
-            Procedures, GitLab CI/CD, SonarQube, CQRS, UI Components (Telerik,
-            Syncfusion), Kubernetes (learning), Docker (learning)
-          </p>
-          <p>
-            <strong>Languages:</strong> Japanese (native), English (professional
-            - TOEIC855), French (bilingual - DALF C2)
-          </p>
-          <p>
-            <strong>Certification:</strong> Microsoft Certified: Azure
-            Fundamentals AZ-900 (training), Opquast — advanced level (05/2021)
-          </p>
+        </div>
+        <div class="skill-category">
+          <h4>Certification</h4>
+          <ul>
+            <li>
+              Microsoft Certified: Azure Fundamentals AZ-900 (now on training)
+            </li>
+            <li>Opquast — advanced level (05/2021)</li>
+          </ul>
         </div>
       </section>
 
-      <section>
+      <!-- Education -->
+      <section class="education">
         <h2>Education</h2>
-        <div class="education">
-          <h3>WebForce3 Coding School</h3>
+
+        <div class="education-item">
+          <h3>Web Developer and Web Mobile Developer - WebForce3</h3>
           <div class="meta">La Madelaine, France • 02/2021 – 05/2021</div>
-          <ul>
-            <li>
-              Fundamentals of web development: PHP, Symfony, HTML, CSS,
-              JavaScript, MySQL, Git, GitHub.
-            </li>
-            <li>Professional Diploma: Web Developer.</li>
-          </ul>
+          <p>
+            Fundamentals of web development: PHP, Symfony, HTML, CSS,
+            JavaScript, MySQL, Git, GitHub
+          </p>
+        </div>
 
-          <h3>Lille University III</h3>
-          <div class="meta">Villeneuve d’Ascq, France • 09/2011 – 06/2023</div>
-          <ul>
-            <li>
-              Master's Degree, Foreign Languages, Literature and Civilization —
-              French as a Foreign Language.
-            </li>
-          </ul>
+        <div class="education-item">
+          <h3>
+            Master's Degree in Foreign Languages, Literature and Civilization
+            with French as a Foreign Language option - Lille University III
+          </h3>
+          <div class="meta">Villeneuve d'Ascq, France • 09/2011 – 06/2023</div>
+        </div>
 
-          <h3>Keio University</h3>
+        <div class="education-item">
+          <h3>Bachelor's Degree in French Language and Literature</h3>
           <div class="meta">Tokyo, Japan • 04/2006 – 03/2010</div>
-          <ul>
-            <li>Bachelor's Degree, French Language and Literature.</li>
-          </ul>
         </div>
       </section>
-    </main>
 
-    <footer>
-      <p style="font-size: 0.9rem; color: #666">Last updated: 2025</p>
-    </footer>
+      <footer>
+        <p>Last updated: Nov. 2025</p>
+      </footer>
+    </div>
   </body>
 </html>
